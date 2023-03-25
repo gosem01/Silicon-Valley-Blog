@@ -27,7 +27,6 @@ header, .project:not(:last-child) {
 #header-main-link {
   margin-top: 10px;
   border-radius: 3px;
-  /* background-color: #C9CC3F; */
 }
 
 #header-main-link a {
@@ -40,3 +39,51 @@ nav a {
   margin-left: 20px;
 }
 
+h2 {
+  background-color: #4A0404;
+  color: #F0E68C;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+
+h2 span {
+  margin: 20px;
+}
+
+#login {
+  background-color: #F0E68C;
+  padding-right: 0px;
+  padding-left: 0px;
+  /* margin-right: 15px;
+  margin-left: 15px; */
+  border: 2px solid #4A0404;
+}
+
+#signup {
+  background-color: #F0E68C;
+  padding-right: 0px;
+  padding-left: 0px;
+  /* margin-right: 15px;
+  margin-left: 15px; */
+  border: 2px solid #4A0404;
+}
+
+form {
+  padding: 15px;
+}
+
+ 
+#login button {
+  background-color: #4A0404;
+  color: #F0E68C;
+  border: 2px solid #4A0404;
+  width: 100%;
+}
+
+#signup button {
+  background-color: #4A0404;
+  color: #F0E68C;
+  border: 2px solid #4A0404;
+  width: 100%;
+}
