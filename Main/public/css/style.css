@@ -1,0 +1,42 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  background-color: #4A0404;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+#header-main-link {
+  margin-top: 10px;
+  border-radius: 3px;
+  /* background-color: #C9CC3F; */
+}
+
+#header-main-link a {
+  margin-top: 10px;
+  color: #5C4033;
+}
+
+nav a {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
