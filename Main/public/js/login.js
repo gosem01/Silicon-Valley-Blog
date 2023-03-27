@@ -1,3 +1,46 @@
+const templateData = {
+  loggedIn: false
+};
+
+const login = document.querySelector('#login');
+const signup = document.querySelector('#signup');
+
+const switchToSignup = async (event) => {
+  event.preventDefault();
+
+  console.log('BEFORE CLICK: ' + templateData.loggedIn);
+
+  if(!templateData.loggedIn) {
+    templateData.loggedIn = true
+    login.setAttribute('style', 'display: none');
+    signup.setAttribute('style', 'display: visible');
+  } else {
+    templateData.loggedIn = false
+    login.setAttribute('style', 'display: visible');
+    signup.setAttribute('style', 'display: none');
+  }
+
+  console.log('AFTER CLICK: ' + templateData.loggedIn);
+};
+
+const switchToLogin = async (event) => {
+  event.preventDefault();
+
+  console.log('BEFORE CLICK: ' + templateData.loggedIn);
+
+  if(templateData.loggedIn) {
+    templateData.loggedIn = false
+    signup.setAttribute('style', 'display: none');
+    login.setAttribute('style', 'display: visible');
+  } else {
+    templateData.loggedIn = true
+    signup.setAttribute('style', 'display: visible');
+    login.setAttribute('style', 'display: none');
+  }
+
+  console.log('AFTER CLICK: ' + templateData.loggedIn);
+};
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -43,6 +86,14 @@ const signupFormHandler = async (event) => {
     }
   }
 };
+
+document
+  .querySelector('#clickToSignup')
+  .addEventListener('click', switchToSignup);
+
+document
+  .querySelector('#clickToLogin')
+  .addEventListener('click', switchToLogin);
 
 document
   .querySelector('.login-form')

@@ -87,3 +87,13 @@ form {
   border: 2px solid #4A0404;
   width: 100%;
 }
+
+#clickToSignup {
+  color: #4A0404;
+  font-weight: bold;
+}
+
+#clickToLogin {
+  color: #4A0404;
+  font-weight: bold;
+}
